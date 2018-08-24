@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="/bootstrap-3.3.7/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	 crossorigin="anonymous">
+	<style>
+		body {
+			padding-top: 70px;
+			font-family: "Helvetica", Arial, sans-serif;
+			margin: 3em 0;
+		}
+
+		h4,
+		h3 {
+			font-weight: bold;
+		}
+
+		.anchor {
+			display: block;
+			height: 60px;
+			margin-top: -60px;
+		}
+		.navbar-header .navbar-brand:hover, #theLinks .nav li a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+		img,
+		video {
+			width: 100%
+		}
+
+		p {
+			text-align: justify;
+		}
+
+		@media screen and (min-width: 1000px) {
+			.border {
+				border-right: 1px solid black;
+			}
+
+			.sign {
+				height: 160px;
+				background-color: lightgray;
+				text-align: center;
+				padding: 25px;
+				margin-top: 25px;
+				margin-bottom: 30px;
+			}
+		}
+		 @media screen and (max-width: 767px) {
+            .btn {
+               margin-bottom: 6px;
+            }
+        }
+
+		.round {
+			border-radius: 5px;
+		}
+
+		footer p {
+			padding-top: 12px;
+			color: white;
+			padding-left: 8%;
+		}
+		.sign {
+				background-color: lightgray;
+		}
+		.t {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: lavender;
+        }
+
+        tbody tr:hover {
+            background-color: aqua;
+        }
+
+        td, th {
+            border: 1px solid black;
+        }
+
+        td, tfoot th {
+            text-align: right;
+        }
+
+    	td:last-child {
+            color: red;
+        }
+		caption h4{
+			text-align: center;
+		}
+	</style>
+	<title>Document</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#theLinks" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+				<a class="navbar-brand" href="#product">Products</a>
+			</div>
+			<div class="collapse navbar-collapse" id="theLinks">
+				<ul class="nav navbar-nav">
+					<li><a href="#signup">Sign Up</a></li>
+					<li><a href="#fin">Financials</a></li>
+					<li><a href="#about">About Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="jumbotron text-center">
+			<h2><strong>ESSTUFF</strong></h2>
+			<h3><strong>A <em>PCS </em> company</strong></h3>
+		</div>
+		<article class="row col-12" >
+			<section>
+				<span class="anchor" id="product"></span>
+				<h3><strong>Products</strong></h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quisquam quasi nesciunt possimus deserunt adipisci
+					consequuntur officiis, cumque quas, distinctio, rem, repellendus temporibus reiciendis obcaecati fuga praesentium necessitatibus!
+					Voluptatibus vero, corporis error fuga dignissimos non!
+				</p>
+			</section>
+			<section class="row">
+				<section class="col-md-4 col-xs-12 border">
+					<h4 class="text-center">Computers</h4>
+					<img src="resources/macworld.jpg" alt="computer" />
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, cum nemo fugit id nostrum qui quam eveniet dolorum
+						libero maxime rem animi aliquam. Id, aut!
+					</p>
+				</section>
+				<section class="col-md-4 col-xs-12 border">
+					<h4 class="text-center">Choirs</h4>
+					<video controls preload="none" poster="resources/shira.png">
+						<source src="resources/El Hanaar Hazeh.mp4" />
+					</video>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, cum nemo fugit id nostrum qui quam eveniet dolorum
+						libero maxime rem animi aliquam. Id, aut!
+					</p>
+				</section>
+				<section class="col-md-4 col-xs-12">
+					<h4 class="text-center">Candy</h4>
+					<img src="resources/candy.png" alt="candy" />
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, cum nemo fugit id nostrum qui quam eveniet dolorum
+						libero maxime rem animi aliquam. Id, aut!
+					</p>
+				</section>
+		</article>
+		<span class="anchor" id="signup"></span>
+		<article class="row sign round">
+			<h3>Sign Me Up!</h3>
+			<form class="form-inline">
+				<div class="form-group">
+					<label class="control-label" for="name">Name</label>
+					<input class="form-control" id="name" name="name" />
+				</div>
+
+				<div class="form-group">
+					<label class="control-label" for="email">Email</label>
+					<input class="form-control" type="email" id="email" name="email" />
+				</div>
+
+				<input class="btn btn-primary" type="submit" />
+			</form>
+		</article>
+		<span class="anchor" id="fin"></span>
+		<article class = "row">
+			<div class = "col-12">
+			<h3>Financials
+			</h3>
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, iure, aut, ullam voluptatem doloremque dignissimos
+			saepe aliquam unde qui laborum dolorum nostrum asperiores consequuntur modi amet expedita reprehenderit sapiente eveniet
+			omnis voluptates! Maiores, voluptatem, ullam placeat labore dolorem incidunt nisi commodi at fugiat minus nobis minima!
+			Optio, soluta, officiis, officia ea sequi aut dicta velit perspiciatis quos a cupiditate quidem culpa sapiente illum corporis
+			voluptate maiores ducimus at alias necessitatibus. Praesentium, provident illo neque perferendis!
+			</p>
+			<caption>
+			<h4 class="text-center">Profits - By Quarter
+			</h4>
+			</caption>
+			<table class="t table table-bordered">
+				<thead>
+					<tr>
+						<th>Year</th>
+						<th>1st Quarter profits</th>
+						<th>2nd Quarter profits</th>
+						<th>3rd Quarter profits</th>
+						<th>4th Quarter profits</th>
+						<th>Total</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>2013</th>
+						<td>$1254564.32</td>
+						<td>$1154545.67</td>
+						<td>$1236566.98</td>
+						<td>$1368546.32</td>
+						<td id="red">$5050934.29</td>
+					</tr>
+					<tr>
+						<th>2014</th>
+						<td>$1385475.87</td>
+						<td>$1485690.23</td>
+						<td>$1365568.54</td>
+						<td>$1545435.11</td>
+						<td id="red">$5623344.75</td>
+					</tr>
+					<tr>
+						<th>2015</th>
+						<td>$1385475.87</td>
+						<td>$1698986.45</td>
+						<td>$1645456.32</td>
+						<td>$1789890.35</td>
+						<td id="red">$6545657.88</td>
+					</tr>
+					<tr>
+						<th>2016</th>
+						<td>$1889776.22</td>
+						<td>$1854565.71</td>
+						<td>NA</td>
+						<td>NA</td>
+						<td id="red">$3654654.93</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="5"><b>Total</b></td>
+						<td id="red">$20978798.85</td>
+					</tr>
+				</tfoot>
+			</table>
+			</div>
+		</article>
+		<span class="anchor" id="about"></span>
+		<article class = "row">
+			<div class = "col-12">
+			<h3 class="prof">About Us</h3>
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, voluptates, aspernatur, delectus sequi natus iure ex modi
+			numquam illo itaque praesentium voluptas ea nam eveniet expedita ad dolorum perferendis eum asperiores neque tempora recusandae
+			fugit eius deserunt soluta! Temporibus, laborum libero blanditiis suscipit reprehenderit. Maiores, aperiam, nulla quae
+			consequuntur natus repellat quis consectetur eveniet tenetur temporibus qui mollitia veniam numquam vitae quia alias possimus
+			sint sequi animi molestias voluptatum totam dolorem maxime impedit dolore. Recusandae, et, iste, provident dolore ullam
+			fuga quo at officia deserunt numquam quis voluptatum inventore magnam distinctio eveniet temporibus vitae sed necessitatibus
+			rerum pariatur reiciendis ab ut. Laborum, itaque aperiam blanditiis sint magni repellendus incidunt consequuntur culpa
+			maiores minima assumenda quaerat earum qui labore ipsum. Consequatur, voluptates, amet temporibus quisquam voluptatum
+			nemo atque expedita ipsam debitis voluptatem provident eveniet facilis hic. Architecto, impedit, maiores, vitae in saepe
+			qui consequuntur unde animi neque voluptates praesentium tempora error eligendi exercitationem ipsam reiciendis possimus
+			quaerat explicabo laborum veritatis vero earum corporis reprehenderit iste necessitatibus. Consequatur, ullam, dicta illum
+			iste nulla voluptates quia optio quidem nihil laborum inventore eius facilis aperiam repellat reiciendis beatae laboriosam
+			minus libero in praesentium. Incidunt, magni, assumenda obcaecati enim eveniet quaerat at itaque numquam id dolorem cupiditate
+			consequuntur porro. Quia, fuga, exercitationem, recusandae rerum optio fugit magni ipsam voluptatibus at quam excepturi
+			corrupti nobis voluptate vero similique maxime fugiat doloribus ad doloremque sit sequi nulla eaque nemo perspiciatis
+			omnis laboriosam veritatis nisi natus animi incidunt ratione officiis accusantium consectetur illum voluptates tempora
+			odio? Maxime, quos, nobis ullam eaque voluptatum illum aliquid necessitatibus a minus maiores itaque dignissimos nemo
+			aperiam consequatur iusto architecto similique obcaecati quod dolorum facilis rem ex labore odit laboriosam et quidem
+			accusantium corporis tempore fuga quis magnam vel tenetur impedit ducimus cumque in est natus ad eum totam optio voluptas!
+			Dicta, nesciunt ipsa minus ratione adipisci earum similique beatae hic laboriosam architecto. Non, voluptatem laudantium
+			dolore quaerat aut numquam error eos voluptatibus perferendis. Magnam, veniam alias repellendus aut possimus dolores optio
+			unde rerum explicabo. Qui, officia laboriosam voluptate recusandae. Mollitia, in, non provident excepturi adipisci aut
+			illo perspiciatis ipsam alias minus! Similique, possimus non dignissimos corporis amet molestias consectetur quae quas
+			adipisci eveniet tempore error est! Porro, illo velit neque tempora aliquam aspernatur libero nostrum facilis consectetur
+			adipisci perferendis voluptate beatae harum voluptates atque ex recusandae ducimus ea inventore soluta possimus eligendi
+			voluptatum nisi explicabo quas. Cum, provident, libero est aperiam omnis delectus laborum amet inventore repellat illo
+			consequatur quibusdam optio sequi necessitatibus non repudiandae deleniti. Quis, ea impedit quos ipsa. Laudantium, laboriosam,
+			quibusdam inventore sit dignissimos natus assumenda minus atque a ea quae maiores repellat expedita quia eius pariatur
+			neque ab consequatur veniam repellendus ducimus enim magnam quis itaque vel tenetur error modi saepe aspernatur temporibus.
+			Magnam, eos optio quae accusamus odio omnis perferendis quasi reiciendis unde officiis. Sed, nobis ea numquam praesentium
+			debitis iste expedita. Ipsa, quod autem consequatur libero suscipit natus impedit! Incidunt, animi dolore ipsa facilis
+			explicabo vitae amet necessitatibus. Facilis, ex, aliquam praesentium eum consectetur ab qui sapiente voluptatum facere
+			assumenda impedit officia quaerat quia explicabo ratione natus illum consequatur quis dolorum mollitia eius quas placeat
+			inventore cum eaque dolores quo. Vel, voluptatibus commodi similique dolore beatae eaque maiores id labore magnam suscipit
+			odio nobis enim deserunt harum quod quos quam nisi voluptates aliquam rerum animi quo officia accusamus. Non, iste, facere,
+			earum fugit dolor in possimus molestias incidunt enim tempora porro impedit itaque unde suscipit iusto optio quo dolores
+			laboriosam molestiae pariatur at mollitia accusamus vel laborum repellat nemo perferendis! Deserunt, atque, harum inventore
+			modi quas ut accusantium odit sed rem magni consequuntur dolor! Sequi, ab repellat! Error, possimus, provident, atque
+			odit ab repudiandae voluptatem suscipit earum sunt quia non perspiciatis eveniet accusantium cum quisquam voluptate accusamus
+			fugiat voluptatum velit mollitia aliquid harum reiciendis molestiae tempora dolorum dolor tempore doloribus voluptatibus
+			optio totam. Voluptate, vel, minus, dolore rerum magnam repellat molestiae sit labore molestias itaque obcaecati maxime.
+			Consectetur, illum quibusdam omnis nobis reprehenderit quidem hic velit fuga excepturi provident id amet aliquam inventore
+			repudiandae quas ad dolorem molestiae eius non natus sed commodi numquam maxime nulla quae optio voluptatum harum. Tenetur,
+			reprehenderit, error, sit ab voluptatum perferendis delectus assumenda vel accusamus cupiditate repellat esse illum obcaecati
+			dolorum corporis! Iusto, sequi unde molestiae molestias voluptates quia voluptas temporibus repellendus debitis inventore!
+			Officiis, quo, voluptates perspiciatis nulla doloribus tempore dolores labore reiciendis rem placeat quidem cupiditate
+			ad nobis nemo possimus facilis aliquid! Est, dolores, sapiente similique beatae accusantium eaque illum excepturi quia
+			id inventore molestiae nobis ipsum modi assumenda distinctio reiciendis architecto. Neque, repudiandae, modi porro nostrum
+			atque nesciunt voluptatem debitis perferendis cum molestias saepe adipisci sunt suscipit similique nobis illo obcaecati
+			vel itaque molestiae assumenda quam autem facere optio ipsa odio quidem maxime est voluptatibus eius iusto. Voluptates,
+			laboriosam accusantium sint velit distinctio ea repellendus aliquid alias cum pariatur assumenda quos facilis labore provident
+			quam officia inventore rerum commodi. Nobis, voluptatem corrupti voluptatibus eligendi officia at laboriosam dicta quibusdam
+			quisquam dolorem earum maxime assumenda voluptates vero odio nemo facere porro autem quae quidem harum nam accusamus a
+			explicabo eaque necessitatibus odit incidunt natus quam unde beatae animi doloribus iure? Modi, nihil, obcaecati rem maiores
+			unde velit officiis alias doloremque. Quae, eveniet nesciunt quas nam voluptatem officiis sit ratione est inventore deserunt
+			nulla itaque doloremque eaque! Corporis, quia consectetur ipsam. Iusto, dolor, odit amet harum dicta ratione quos accusamus
+			fuga vero inventore repellendus aut magni incidunt doloremque repudiandae cupiditate consectetur soluta pariatur totam
+			est. Quidem, in voluptatibus fugit quaerat tempora ab quas maiores corporis expedita dolorum. Dolorem, nisi, rerum officiis
+			architecto recusandae iste quos totam dolore omnis quidem numquam a pariatur ipsam eaque doloremque velit est libero eos
+			aliquid rem optio at unde! Illo, fuga quisquam debitis reiciendis amet consequuntur autem omnis quam commodi distinctio
+			minus veniam est sint in fugit reprehenderit eveniet dolores rerum aliquam neque numquam quidem dolorum velit odit end
+			</p>
+			</div>
+		</article>
+	</div>
+	<footer class="navbar navbar-inverse navbar-fixed-bottom">
+		<p>&copy; ESSTUFF 2015</p>
+	</footer>
+	</div>
+	<script src="../bootstrap-3.3.7/js/jqueryV1.12.4.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="../bootstrap-3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	 crossorigin="anonymous"></script>
+</body>
+
+</html>

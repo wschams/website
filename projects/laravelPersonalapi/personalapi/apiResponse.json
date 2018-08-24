@@ -1,0 +1,217 @@
+# GET/technical-skills
+    # HTTP/1.1 200 OK
+    # Content-Type: application/vnd.api+json
+        {   
+            "data": [
+                {
+                    "type": "Technical Skills",
+                    "id": "1",
+                    "attributes": {
+                        "name": "JavaScript"
+                    }
+                },
+                {
+                    "type": "Technical Skills",
+                    "id": "2",
+                    "attributes": {
+                        "name": "Java"
+                    }
+                },
+                {
+                    "type": "Technical Skills",
+                    "id": "3",
+                    "attributes": {
+                        "name": "Ajax"
+                    }
+                },
+                {
+                    "type": "Technical Skills",
+                    "id": "4",
+                    "attributes": {
+                        "name": "jQuery"
+                    }
+                },
+                {
+                    "type": "Technical Skills",
+                    "id": "5",
+                    "attributes": {
+                        "name": "React"
+                    }
+                },
+                {
+                    "type": "Technical Skills",
+                    "id": "6",
+                    "attributes": {
+                        "name": "Angular"
+                    }
+                },
+                {
+                    "type": "Technical Skills",
+                    "id": "7",
+                    "attributes": {
+                        "name": "MySQL"
+                    }
+                },
+                {
+                    "type": "Technical Skills",
+                    "id": "8",
+                    "attributes": {
+                        "name": "HTML"
+                    }
+                },
+                {
+                    "type": "Technical Skills",
+                    "id": "9",
+                    "attributes": {
+                        "name": "CSS"
+                    }
+                },
+                {
+                    "type": "Technical Skills",
+                    "id": "10",
+                    "attributes": {
+                        "name": "PHP"
+                    }
+                },
+                {
+                    "type": "Technical Skills",
+                    "id": "11",
+                    "attributes": {
+                        "name": "OOP"
+                    }
+                },
+                {
+                    "type": "Technical Skills",
+                    "id": "12",
+                    "attributes": {
+                        "name": "Bootstrap"
+                    }
+                },
+                {
+                    "type": "Technical Skills",
+                    "id": "13",
+                    "attributes": {
+                        "name": "NodeJS"
+                    }
+                },
+                {
+                    "type": "Technical Skills",
+                    "id": "14",
+                    "attributes": {
+                        "name": "MongoDB"
+                    }
+                },
+                {
+                    "type": "Technical Skills",
+                    "id": "15",
+                    "attributes": {
+                        "name": "ExpressJS"
+                    }
+                }
+            ]
+        }
+
+# GET/institutions
+# HTTP/1.1 200 OK
+# Content-Type: application/vnd.api+json
+    {   
+        "data": [
+            {
+                "type": "Institutions",
+                "id": "1",
+                "attributes": {
+                    "title": "Software Developer Intern",
+                    "organization": "Bitbean"
+                }
+            },
+            {
+                "type": "Institutions",
+                "id": "2",
+                "attributes": {
+                    "title": "Software Web and Application Development Course",
+                    "organization": "The School of Evolving Technologies(PCS)"
+                }
+            },
+            {
+                "type": "Institutions",
+                "id": "3",
+                "attributes": {
+                    "title": "Talmudic Law Student",
+                    "organization": "Beth Medrash Govoha"
+                }
+            }
+        ]
+    }
+
+# GET/institutions/1
+# HTTP/1.1 200 OK
+# Content-Type: application/vnd.api+json
+    {   
+        "data": [
+            {
+                "type": "Institutions",
+                "id": "1",
+                "attributes": {
+                    "title": "Software Developer Intern",
+                    "organization": "Bitbean",
+                    "start_date": "May 2018",
+                    "end_date": "Current",
+                    "location": "Lakewood, NJ"
+                }
+            }
+        ]
+    }
+
+# GET/institutions/2
+# HTTP/1.1 200 OK
+# Content-Type: application/vnd.api+json
+    {   
+        "data": [
+            {
+                "type": "Institutions",
+                "id": "1",
+                "attributes": {
+                    "title": "Software Web and Application Development Course",
+                    "organization": "The School of Evolving Technologies(PCS)",
+                    "start_date": "September 2016",
+                    "end_date": "April 2018",
+                    "location": "Lakewood, NJ"
+                }
+            }
+        ]
+    }
+
+# GET/institutions/3
+# HTTP/1.1 200 OK
+# Content-Type: application/vnd.api+json
+    {   
+        "data": [
+            {
+                "type": "Institutions",
+                "id": "1",
+                "attributes": {
+                    "title": "Talmudic Law Student",
+                    "organization": "Beth Medrash Govoha",
+                    "start_date": "2009",
+                    "end_date": "2016",
+                    "location": "Lakewood, NJ"
+                }
+            }
+        ]
+    }
+    
+#Errors
+#HTTP/1.1 404 Not Found
+#Content-Type: application/vnd.api+json
+
+{
+    "errors": [
+    {
+        "status": "404",
+        "source": {
+        "pointer": "/roles/44"
+        },
+        "detail": "Resource not found."
+    }
+    ]
+}
