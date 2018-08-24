@@ -15,8 +15,7 @@ html,
 body {
     width: 100%;
     height: 100%;
-    background-image: url("1.jpg");
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
 }
 
 body {
@@ -24,8 +23,13 @@ body {
     background: transparent;
 }
 
+#top {
+    background-image: url("1.jpg");
+    background-size: 100%;
+}
+
 .text-vertical-center {
-	width: 100%;
+    width: 100%;
     text-align: center;
     vertical-align: middle;
     color: #fff;
@@ -66,12 +70,6 @@ body {
     background-color: rgba(255,255,255,0.8);
 }
 
-/* Custom Horizontal Rule */
-
-hr.small {
-    max-width: 100px;
-}
-
 /* Header */
 
 .header {
@@ -90,8 +88,8 @@ hr.small {
 }
 
 .header-text {
-	max-width: 650px;
-	margin: 0 auto;
+    max-width: 650px;
+    margin: 0 auto;
     padding: 30px;
 }
 
@@ -114,15 +112,13 @@ hr.small {
     transition-duration: .75s;
 }
 
-#i {
+#image {
   background-image: url("me2.jpg");
   background-size: cover;
   background-position: 65% center;
-}
-#i {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
 }
 
 /* About */
@@ -130,6 +126,7 @@ hr.small {
 .about {
     padding: 50px 0;
 }
+
 /* Material portfolio*/
 .card {
 	position: relative;
@@ -318,9 +315,12 @@ hr.small {
   }
 }
 
+/* Resume */
 
-
-
+#resume {
+    width: 100%;
+    height: 1170px;
+}
 /* Portfolio */
 
 .portfolio {
