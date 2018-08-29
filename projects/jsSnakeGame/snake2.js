@@ -114,7 +114,7 @@
     }
 
     var snakeHead = document.createElement('img');
-    snakeHead.src = "images/snake.png";
+    snakeHead.src = "projects/jsSnakeGame/images/snake.png";
 
     snakeHead.onload = gameLoop;
 
@@ -143,7 +143,7 @@
     }
 
     var apple = document.createElement('img');
-    apple.src = "images/apple.png";
+    apple.src = "projects/jsSnakeGame/images/apple.png";
 
     apple.onload = placeApple;
 
