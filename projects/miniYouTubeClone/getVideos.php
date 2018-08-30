@@ -1,5 +1,5 @@
 <?php
-require 'db.php';
+require 'projects/miniYouTubeClone/db.php';
 
 $query = "SELECT title, url, img FROM forge.videos";
 $statement = $db->prepare($query);
