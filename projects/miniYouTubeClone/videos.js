@@ -12,9 +12,9 @@
         JSON.parse(loadedVideos).forEach(function (video) {
             loadVideoOption(video);
         });
-    }).fail(function (jqxhr) {
+    })/* .fail(function (jqxhr) {
         pcs.messagebox.show("Error: " + jqxhr.responseText);
-    });
+    }) */;
 
     function loadVideoOption(video) {
         $('<li><figcaption>' + video.title + '</figcaption><figure><img src = "' + video.img + '">' + '</figure></li>')
