@@ -9,6 +9,7 @@
         list = $('ul');
 
     $.get("projects/miniYouTubeClone/getVideos.php", function (loadedVideos) {
+      console.log(loadedVideos);
         JSON.parse(loadedVideos).forEach(function (video) {
             loadVideoOption(video);
         });
