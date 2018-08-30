@@ -1,7 +1,7 @@
 <?php
-    $cs = "mysql:host=localhost;dbname=test";
-    $user = "test";
-    $password = '0000';
+    $cs = "mysql:host=forge;dbname=forge";
+    $user = "forge";
+    $password = 'dNDUaWlPWbsibGZRr52t';
 
     try {
         $options = [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION];
