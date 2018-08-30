@@ -1,5 +1,5 @@
 <?php
-    $cs = "mysql:host=forge;dbname=forge";
+    $cs = "mysql:host=167.99.224.176;dbname=forge";
     $user = "forge";
     $password = 'dNDUaWlPWbsibGZRr52t';
 
