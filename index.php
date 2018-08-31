@@ -1,4 +1,5 @@
 <?php
+console.log($_ENV['DB_PASSWORD']);
 $action = "home";
 if(!empty($_GET['action'])) {
     $action = $_GET['action'];
