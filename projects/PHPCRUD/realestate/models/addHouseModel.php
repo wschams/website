@@ -2,7 +2,7 @@
 if($_SERVER['REQUEST_METHOD'] === "POST" && empty($errors)){
     include 'utils/db.php';
         try {
-            $insert = "INSERT INTO `houses`(`price`, `address`, `city`, `state`, `zip`, `picture`,
+            $insert = "INSERT INTO `forge.houses`(`price`, `address`, `city`, `state`, `zip`, `picture`,
             `notes`) VALUES (?, ?, ?, ?, ?, ?, ?)";
             $statement = $db->prepare($insert);
             $statement->execute($newHouse);

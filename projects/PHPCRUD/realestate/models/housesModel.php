@@ -28,7 +28,7 @@ if(empty($direction)) {
 }
 
 try {
-    $query = "SELECT * FROM houses WHERE (:zip = '' OR zip=:zip)
+    $query = "SELECT * FROM forge.houses WHERE (:zip = '' OR zip=:zip)
                                     AND (:min = '' OR price >= :min)
                                     AND (:max = '' OR price <= :max)
                                     ORDER BY $column $direction

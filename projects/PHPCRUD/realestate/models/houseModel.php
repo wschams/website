@@ -3,7 +3,7 @@
 
     if (! empty($houseId)) {
         try {
-            $query = "SELECT * FROM houses WHERE id = :id";
+            $query = "SELECT * FROM forge.houses WHERE id = :id";
             $statement = $db->prepare($query);
             $statement->bindValue('id', $houseId);
             $statement->execute();

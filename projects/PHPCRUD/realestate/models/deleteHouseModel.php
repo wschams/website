@@ -2,7 +2,7 @@
 if(!empty ($houseToDelete)) {
     include 'utils/db.php';
     try{
-        $delete = "DELETE FROM `houses` WHERE id = :id";
+        $delete = "DELETE FROM `forge.houses` WHERE id = :id";
         $statement = $db->prepare($delete);
         $statement->bindValue('id', $houseToDelete);
         $statement->execute();
