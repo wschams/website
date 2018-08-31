@@ -1,16 +1,4 @@
 <?php
-$env = $app->detectEnvironment( function(){
-  try {
-      if (($env = getenv('APP_ENV')) === false) {
-          $dotenv = new Dotenv\Dotenv(__DIR__.'/../');
-          $dotenv->load();
-          $env = getenv('APP_ENV');
-      }
-      return $env;
-  } catch (Exception $e) {
-      return 'local';    
-  }
-});
 $action = "home";
 if(!empty($_GET['action'])) {
     $action = $_GET['action'];
