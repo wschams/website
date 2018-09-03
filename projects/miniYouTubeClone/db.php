@@ -1,7 +1,7 @@
 <?php
     $cs = "mysql:host=167.99.224.176;dbname=forge";
     $user = "forge";
-    $password = 'dNDUaWlPWbsibGZRr52t';
+    $password = getenv(DB_PASSWORD);
 
     try {
         $options = [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION];
