@@ -6,29 +6,29 @@ if(!empty($_GET['action'])) {
 
 switch($action) {
     case 'home':
-        include 'controllers/homeController.php';
+        include 'projects/PHPCRUD/realestate/controllers/homeController.php';
         exit;
     case 'table':
-        include 'controllers/housesTableController.php';
+        include 'projects/PHPCRUD/realestate/controllers/housesTableController.php';
         exit;
     case 'details':
-        include 'controllers/houseDetailsController.php';
+        include 'projects/PHPCRUD/realestate/controllers/houseDetailsController.php';
         exit;
     case 'add':
-        include 'controllers/addHouseController.php';
+        include 'projects/PHPCRUD/realestate/controllers/addHouseController.php';
         exit;
     case 'delete':
-        include 'controllers/deleteHouseController.php';
+        include 'projects/PHPCRUD/realestate/controllers/deleteHouseController.php';
         exit;
     case 'update':
-        include 'controllers/updateHouseController.php';
+        include 'projects/PHPCRUD/realestate/controllers/updateHouseController.php';
         exit;
     case 'update2':
-        include 'controllers/updateHouseController2.php';
+        include 'projects/PHPCRUD/realestate/controllers/updateHouseController2.php';
         exit;
     default:
         $error = "Dont know how to $action";
-        include 'views/error.php';
+        include 'projects/PHPCRUD/realestate/views/error.php';
         exit;
 }
 
