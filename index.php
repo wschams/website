@@ -17,6 +17,24 @@ switch($action) {
     case 'crud':
         include 'projects/PHPCRUD/realestate/home.php';
         exit;
+    case 'table':
+        include 'projects/PHPCRUD/realestate/controllers/housesTableController.php';
+        exit;
+    case 'details':
+        include 'projects/PHPCRUD/realestate/controllers/houseDetailsController.php';
+        exit;
+    case 'add':
+        include 'projects/PHPCRUD/realestate/controllers/addHouseController.php';
+        exit;
+    case 'delete':
+        include 'projects/PHPCRUD/realestate/controllers/deleteHouseController.php';
+        exit;
+    case 'update':
+        include 'projects/PHPCRUD/realestate/controllers/updateHouseController.php';
+        exit;
+    case 'update2':
+        include 'projects/PHPCRUD/realestate/controllers/updateHouseController2.php';
+        exit;
     case 'ant':
         include 'projects/antDisplay/ants.html';
         exit;
