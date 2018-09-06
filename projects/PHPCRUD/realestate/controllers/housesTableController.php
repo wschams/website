@@ -1,5 +1,5 @@
 <?php
-    include 'projects/PHPCRUD/realestate/filterPagerHelper.php';
+    include 'projects/PHPCRUD/realestate/controllers/filterPagerHelper.php';
 
     if(! empty($_GET['direction'])) {
     if($_GET['direction'] ==! "ASC" || $_GET['direction'] ==! "DESC") {
