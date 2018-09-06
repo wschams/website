@@ -1,5 +1,5 @@
 <?php
-    include 'filterPagerHelper.php';
+    include 'projects/PHPCRUD/realestate/filterPagerHelper.php';
 
     if(! empty($_GET['direction'])) {
     if($_GET['direction'] ==! "ASC" || $_GET['direction'] ==! "DESC") {
@@ -18,11 +18,11 @@ if(! empty($_GET['column'])) {
     $column = $_GET['column'];
     }
 }
-    include 'models/housesModel.php';
+    include 'projects/PHPCRUD/realestate/models/housesModel.php';
     if(empty ($houses)) {
         $errors[] = "No more houses to show";
-        include 'views/error.php';
+        include 'projects/PHPCRUD/realestate/views/error.php';
     } else {
-        include 'views/housesTableView.php';
+        include 'projects/PHPCRUD/realestate/views/housesTableView.php';
     }
 ?>
