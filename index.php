@@ -15,16 +15,10 @@ switch($action) {
         include 'projects/jsSnakeGame/snake.html';
         exit;
     case 'crud':
-        include 'projects/PHPCRUD/realestate/index.php';
-        exit;
-    case 'login':
-        include 'projects/PHPlogin/store/index.php';
+        include 'projects/PHPCRUD/realestate/home.php';
         exit;
     case 'ant':
         include 'projects/antDisplay/ants.html';
-        exit;
-    case 'youtube':
-        include 'projects/miniYouTubeClone/videos.html';
         exit;
     default:
         $error = "Dont know how to $action";
