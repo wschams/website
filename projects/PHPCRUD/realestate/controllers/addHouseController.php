@@ -53,9 +53,9 @@ if(empty($_POST['notes'])) {
 }
 }
 if(empty($errors)) {
-    include 'models/addHouseModel.php';
-    include 'views/addHouseView.php';
+    include 'projects/PHPCRUD/realestate/models/addHouseModel.php';
+    include 'projects/PHPCRUD/realestate/views/addHouseView.php';
 } elseif(!empty ($errors)) {
-    include 'views/error.php';
+    include 'projects/PHPCRUD/realestate/views/error.php';
 }
 ?>

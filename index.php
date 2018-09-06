@@ -40,6 +40,6 @@ switch($action) {
         exit;
     default:
         $error = "Dont know how to $action";
-        include 'views/error.php';
+        include 'projects/PHPCRUD/realestate/views/error.php';
         exit;
 }
