@@ -1,7 +1,7 @@
 <?php
 if (!empty($_GET['houseId'])) {
     $houseId = $_GET['houseId'];
-    include 'models/houseModel.php';
+    include 'projects/PHPCRUD/realestate/models/houseModel.php';
     
     if($_SERVER['REQUEST_METHOD'] === "POST") {
         if(empty($_POST['price'])) {
@@ -57,14 +57,14 @@ if (!empty($_GET['houseId'])) {
         }
         }
         if(!empty ($errors)) {
-            include 'views/error.php';
+            include 'projects/PHPCRUD/realestate/views/error.php';
         } else {
-            include 'models/updateHouseModel.php';
-            include 'models/houseModel.php';
-            include 'views/updateHouseView2.php';
+            include 'projects/PHPCRUD/realestate/models/updateHouseModel.php';
+            include 'projects/PHPCRUD/realestate/models/houseModel.php';
+            include 'projects/PHPCRUD/realestate/views/updateHouseView2.php';
         }
 } else {
     $errors[] = "houseId is a required param";
-    include 'views/error.php';
+    include 'projects/PHPCRUD/realestate/views/error.php';
 }
 ?>

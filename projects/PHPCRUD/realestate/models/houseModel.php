@@ -1,5 +1,5 @@
 <?php
-    include 'utils/db.php';
+    include 'projects/PHPCRUD/realestate/utils/db.php';
 
     if (! empty($houseId)) {
         try {

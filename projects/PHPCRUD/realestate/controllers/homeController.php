@@ -1,10 +1,10 @@
 <?php
-    include 'filterPagerHelper.php';
-    include 'models/housesModel.php';
+    include 'projects/PHPCRUD/realestate/controllers/filterPagerHelper.php';
+    include 'projects/PHPCRUD/realestate/models/housesModel.php';
     if(empty ($houses)) {
         $errors[] = "No more houses to show";
-        include 'views/error.php';
+        include 'projects/PHPCRUD/realestate/views/error.php';
     } else {
-        include 'views/homeView.php';
+        include 'projects/PHPCRUD/realestate/views/homeView.php';
     }
 ?>

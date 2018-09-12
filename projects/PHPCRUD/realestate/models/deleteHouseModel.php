@@ -1,6 +1,6 @@
 <?php
 if(!empty ($houseToDelete)) {
-    include 'utils/db.php';
+    include 'projects/PHPCRUD/realestate/utils/db.php';
     try{
         $delete = "DELETE FROM `forge.houses` WHERE id = :id";
         $statement = $db->prepare($delete);
