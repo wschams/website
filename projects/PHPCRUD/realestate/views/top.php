@@ -37,7 +37,7 @@
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="<?= getLink(['action'=>'home']) ?>">Home</a></li>
+                <li><a href="<?= getLink(['action'=>'crud']) ?>">Home</a></li>
                 <li><a href="<?= getLink(['action'=>'table']) ?>">Table</a></li>
                 <li><a href="<?= getLink(['action'=>'add']) ?>">Add</a></li>
                 <li><a href="<?= getLink(['action'=>'delete']) ?>">Delete</a></li>

@@ -23,7 +23,7 @@
     <div class="row">
         <?php include 'projects/PHPCRUD/realestate/views/filters.php' ?>
         <div class="col-sm-9">
-            <?php include "projects/PHPCRUD/realestate/views/pager.php"; ?>
+            <!-- <?php include "projects/PHPCRUD/realestate/views/pager.php"; ?> -->
             <div class="row">
                 <?php 
                 $i = 0;
@@ -58,7 +58,7 @@
                     ?>
                 <?php endforeach ?>
             </div>
-            <?php include  "projects/PHPCRUD/realestate/views/pager.php"; ?>
+            <!-- <?php include  "projects/PHPCRUD/realestate/views/pager.php"; ?> -->
         </div>
     </div>
 <?php 
