@@ -22,7 +22,7 @@
         <?php include 'projects/PHPCRUD/realestate/views/filters.php' ?>
 
         <div class="col-sm-9">
-            <?php include "projects/PHPCRUD/realestate/views/pager.php"; ?>
+            <!-- <?php include "projects/PHPCRUD/realestate/views/pager.php"; ?> -->
             <table class="table table-striped table-hover">
                 <thead>
                     <tr>
@@ -55,7 +55,7 @@
                     <?php endforeach ?>
                 </tbody>
             </table>
-            <?php include "projects/PHPCRUD/realestate/views/pager.php"; ?>
+            <!-- <?php include "projects/PHPCRUD/realestate/views/pager.php"; ?> -->
         </div>
     </div>
 <?php
