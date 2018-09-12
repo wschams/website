@@ -15,8 +15,8 @@ switch($action) {
         include 'projects/jsSnakeGame/snake.html';
         exit;
     case 'crud':
-        include 'projects/PHPCRUD/realestate/home.php';
-        exit;
+      include 'projects/PHPCRUD/realestate/controllers/homeController.php';
+      exit;
     case 'table':
         include 'projects/PHPCRUD/realestate/controllers/housesTableController.php';
         exit;
